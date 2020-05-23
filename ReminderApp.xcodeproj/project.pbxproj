@@ -15,6 +15,8 @@
 		B4693E1B2479A710000E5241 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4693E192479A710000E5241 /* LaunchScreen.storyboard */; };
 		B4C63A452479CC0E007705BB /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C63A442479CC0E007705BB /* Reminder.swift */; };
 		B4C63A472479CC3B007705BB /* ReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C63A462479CC3B007705BB /* ReminderService.swift */; };
+		B4C63A492479D420007705BB /* RemindersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C63A482479D420007705BB /* RemindersVC.swift */; };
+		B4C63A4B2479D442007705BB /* ReminderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C63A4A2479D442007705BB /* ReminderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		B4693E1C2479A710000E5241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4C63A442479CC0E007705BB /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		B4C63A462479CC3B007705BB /* ReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderService.swift; sourceTree = "<group>"; };
+		B4C63A482479D420007705BB /* RemindersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersVC.swift; sourceTree = "<group>"; };
+		B4C63A4A2479D442007705BB /* ReminderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				B4693E122479A70F000E5241 /* ViewController.swift */,
+				B4C63A482479D420007705BB /* RemindersVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -83,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				B4693E142479A70F000E5241 /* Main.storyboard */,
+				B4C63A4A2479D442007705BB /* ReminderCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,7 +185,9 @@
 				B4693E132479A70F000E5241 /* ViewController.swift in Sources */,
 				B4C63A472479CC3B007705BB /* ReminderService.swift in Sources */,
 				B4693E0F2479A70F000E5241 /* AppDelegate.swift in Sources */,
+				B4C63A4B2479D442007705BB /* ReminderCell.swift in Sources */,
 				B4693E112479A70F000E5241 /* SceneDelegate.swift in Sources */,
+				B4C63A492479D420007705BB /* RemindersVC.swift in Sources */,
 				B4C63A452479CC0E007705BB /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
