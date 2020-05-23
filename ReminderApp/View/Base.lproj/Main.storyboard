@@ -150,10 +150,10 @@
             </objects>
             <point key="canvasLocation" x="1757.9710144927537" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Favorite ReminderVC-->
         <scene sceneID="0ra-PD-Cxx">
             <objects>
-                <viewController id="UnD-Fa-o74" sceneMemberID="viewController">
+                <viewController id="UnD-Fa-o74" customClass="FavoriteReminderVC" customModule="ReminderApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vMG-55-sh8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,7 +166,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10/10/20 2:00PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vg6-Wl-02l">
-                                <rect key="frame" x="20" y="394" width="374" height="21"/>
+                                <rect key="frame" x="20" y="358" width="374" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.97571763847579129" blue="0.15254197384041424" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -177,10 +177,14 @@
                         <viewLayoutGuide key="safeArea" id="hCG-Iq-dTF"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="oH8-Sx-ymt"/>
+                    <connections>
+                        <outlet property="dateLbl" destination="vg6-Wl-02l" id="ejR-Gb-FN5"/>
+                        <outlet property="titleLbl" destination="qhl-ro-oy4" id="caq-OD-9ga"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5p-gu-hoY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="822"/>
+            <point key="canvasLocation" x="947.82608695652186" y="821.65178571428567"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="GRy-ec-Av3">
