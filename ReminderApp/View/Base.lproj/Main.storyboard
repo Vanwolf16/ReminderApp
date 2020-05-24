@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r9J-vr-76y">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r9J-vr-76y">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -74,7 +74,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Reminder" id="wgv-hB-JF4">
-                        <barButtonItem key="leftBarButtonItem" title="Edit" id="eXt-ey-jXA"/>
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="eXt-ey-jXA">
+                            <connections>
+                                <action selector="editBtnPressed:" destination="BYZ-38-t0r" id="xcI-wx-rpi"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZYl-59-8FM">
                             <connections>
                                 <segue destination="uvK-XZ-9TA" kind="show" identifier="AddSegue" id="buN-z1-uC6"/>
@@ -82,17 +86,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="myTableViewCell" destination="r9J-vr-76y" id="ptm-K1-dAy"/>
+                        <outlet property="myTableView" destination="r9J-vr-76y" id="ptm-K1-dAy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="949" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--New ReminderVC-->
         <scene sceneID="vNR-VS-lOE">
             <objects>
-                <viewController id="uvK-XZ-9TA" sceneMemberID="viewController">
+                <viewController id="uvK-XZ-9TA" customClass="NewReminderVC" customModule="ReminderApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fqk-C2-U29">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,12 +143,20 @@
                                 <state key="normal" title="Save">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveBtnTapped:" destination="uvK-XZ-9TA" eventType="touchUpInside" id="6mU-OH-eOK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Xmo-al-OWt"/>
                     </view>
                     <navigationItem key="navigationItem" id="vU9-PH-l2E"/>
+                    <connections>
+                        <outlet property="completedSwitch" destination="ppW-YW-U6b" id="wK4-CT-2ku"/>
+                        <outlet property="datePicker" destination="PD5-Pt-TAv" id="Ddb-o3-1rP"/>
+                        <outlet property="titleTF" destination="Nwh-Zu-05o" id="sZK-Nt-phs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MzK-BC-xTF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

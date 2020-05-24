@@ -15,14 +15,21 @@ class ReminderCell: UITableViewCell {
     
     func configCell(reminder:Reminder){
         titleLbl.text = reminder.title
+        
+        completedView.layer.cornerRadius = completedView.frame.size.width / 2.0
+        
+        completedView.layer.borderColor = UIColor.lightGray.cgColor
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM/dd/yy hh:mma"
         dateLbl.text = dateFormatter.string(from: reminder.date)
         
         if reminder.isCompleted{
             completedView.backgroundColor = UIColor.green
+            completedView.layer.borderWidth = 0.0
         }else{
             completedView.backgroundColor = UIColor.gray
+            completedView.layer.borderWidth = 2.0
         }
         
     }

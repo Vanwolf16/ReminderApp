@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B453912E2479F00D0019DB93 /* NewReminderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B453912D2479F00D0019DB93 /* NewReminderVC.swift */; };
 		B4693E0F2479A70F000E5241 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4693E0E2479A70F000E5241 /* AppDelegate.swift */; };
 		B4693E112479A70F000E5241 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4693E102479A70F000E5241 /* SceneDelegate.swift */; };
 		B4693E132479A70F000E5241 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4693E122479A70F000E5241 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B453912D2479F00D0019DB93 /* NewReminderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReminderVC.swift; sourceTree = "<group>"; };
 		B4693E0B2479A70F000E5241 /* ReminderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReminderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4693E0E2479A70F000E5241 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4693E102479A70F000E5241 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				B4693E122479A70F000E5241 /* ViewController.swift */,
 				B4C63A482479D420007705BB /* RemindersVC.swift */,
 				B4C63A4C2479D710007705BB /* FavoriteReminderVC.swift */,
+				B453912D2479F00D0019DB93 /* NewReminderVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				B4693E112479A70F000E5241 /* SceneDelegate.swift in Sources */,
 				B4C63A492479D420007705BB /* RemindersVC.swift in Sources */,
 				B4C63A452479CC0E007705BB /* Reminder.swift in Sources */,
+				B453912E2479F00D0019DB93 /* NewReminderVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
